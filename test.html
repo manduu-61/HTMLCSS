@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
    <title>남은 일수 계산기</title>
 </head>
+
 <body>
    <h1>남은 일수 계산기</h1>
    <p>날짜를 입력하세요:</p>
@@ -10,16 +12,8 @@
    <button onclick="calculateRemainingDays()">계산하기</button>
    <p id="result"></p>
 
-   <script>
-      function calculateRemainingDays() {
-         const inputDate = document.getElementById("date-input").value;
-         const inputTime = new Date(inputDate).getTime();
-         const nowTime = new Date().getTime();
-         const remainingTime = inputTime - nowTime;
-         const remainingDays = Math.ceil(remainingTime / (1000 * 3600 * 24));
-         document.getElementById("result").innerHTML = `남은 일수: ${remainingDays}일`;
-      }
-        
+  
    </script>
 </body>
+
 </html>
